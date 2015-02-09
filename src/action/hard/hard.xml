@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <package name="hard" extends="struts-default">
+
+				
+				<action name="DataFunctionH" class="action.hard.DataFunctionHAction">
+					<result name="input">/nesma/hard/DataFunctionList.jsp</result>
+					<result name="success">/nesma/hard/editDataFunction.jsp</result>
+					<result name="select">/nesma/hard/selectForDf.jsp</result>
+     			</action>
+				<action name="TransFunctionH" class="action.hard.TransFunctionHAction">
+					<result name="input">/nesma/hard/TransFunctionList.jsp</result>
+					<result name="success">/nesma/hard/editTransFunction.jsp</result>
+					<result name="select">/nesma/hard/selectForTf.jsp</result>
+     			</action>
+				<action name="RetH" class="action.hard.RetHAction">
+					<result name="input">/nesma/hard/RetList.jsp</result>
+					<result name="success">/nesma/hard/editRet.jsp</result>
+					<result name="select">/nesma/hard/selectForRet.jsp</result>
+     			</action>
+				<action name="FpcH" class="action.hard.FpcHAction">
+					<result name="input">/nesma/hard/viewSizeEstimateResult.jsp</result>
+					<result name="inputFit">/nesma/hard/viewCostEstimateResult.jsp</result>
+     			</action>
+     </package>
+
+</struts>

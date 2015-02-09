@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <package name="easy" extends="struts-default">
+
+				
+				<action name="DataFunctionE" class="action.easy.DataFunctionEAction">
+					<result name="input">/nesma/easy/DataFunctionList.jsp</result>
+					<result name="success">/nesma/easy/editDataFunction.jsp</result>
+					<result name="select">/nesma/easy/selectForDf.jsp</result>
+     			</action>
+				<action name="FpcE" class="action.easy.FpcEAction">
+					<result name="input">/nesma/easy/viewSizeEstimateResult.jsp</result>
+					<result name="inputFit">/nesma/easy/viewCostEstimateResult.jsp</result>
+     			</action>
+     			<action name="Convert" class="action.easy.ConvertAction">
+					<result>/nesma/easy/convert.jsp</result>
+     			</action>
+     			
+     </package>
+
+</struts>

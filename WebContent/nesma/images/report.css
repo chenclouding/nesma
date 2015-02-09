@@ -1,0 +1,56 @@
+#itsthetable {
+	font-size: 12px; color:#000000 font-family: "宋体";
+	color: #222;
+}
+
+table {
+	border-collapse: collapse;
+	font-size: 12px; color:#000000 font-family: "宋体";
+}
+
+caption {
+	font-size: 15px; color:#000000 font-family: "宋体";
+	color: #444;
+}
+
+td, th {
+	text-align: left;
+	padding: .6em .4em;
+	font-size: 14px; color:#000000 font-family: "宋体";	
+	vertical-align: top;
+	width:11%;
+}
+
+thead th, tfoot th, tfoot td {
+	border: 1px solid #361;
+	border-width: 1px 0;
+	color: #444;
+	font-size: 14px; color:#000000 font-family: "宋体";
+	padding:10px 5px 15px 20px;	
+}
+
+tbody tr {
+	background: #fcfcff;
+	font-size: 12px; color:#000000 font-family: "宋体";
+	padding:10px 5px 15px 20px;
+}
+
+tbody tr.odd {
+	background: #fffcfc;
+	font-size: 12px; color:#000000 font-family: "宋体";
+}
+
+tbody td, tbody th {
+	border-bottom: 1px solid #779;
+	font-size: 12px; color:#000000 font-family: "宋体";
+	padding:10px 5px 15px 20px;
+}
+
+tbody tr.odd td, tbody tr.odd th {
+	border-color: #977;
+	font-size: 12px; color:#000000 font-family: "宋体";
+}
+
+tbody tr:last-child td, tbody tr:last-child th {
+	border: none;
+}

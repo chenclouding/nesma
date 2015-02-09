@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <package name="main" extends="struts-default">
+				<action name="Project" class="action.main.ProjectAction">
+					<result name="input">/nesma/main/ProjectList.jsp</result>
+					<result name="success">/nesma/main/editProject.jsp</result>
+					<result name="FunctionModuleList">/nesma/main/selectForFm.jsp</result>
+					<result name="CountSessionList">/nesma/main/selectForCs.jsp</result>
+					<result name="easy">/nesma/easy/index.jsp</result>
+					<result name="medium">/nesma/medium/index.jsp</result>
+					<result name="hard">/nesma/hard/index.jsp</result>
+					<result name="summa">/nesma/main/viewResultSummary.jsp</result>
+     			</action>
+				<action name="FunctionModule" class="action.main.FunctionModuleAction">
+					<result name="input">/nesma/main/FunctionModuleList.jsp</result>
+					<result name="success">/nesma/main/editFunctionModule.jsp</result>
+     			</action>
+				<action name="CountSession" class="action.main.CountSessionAction">
+					<result name="input">/nesma/main/CountSessionList.jsp</result>
+					<result name="success">/nesma/main/editCountSession.jsp</result>
+					<result name="easy">/nesma/easy/index.jsp</result>
+					<result name="medium">/nesma/medium/index.jsp</result>
+					<result name="hard">/nesma/hard/index.jsp</result>
+     			</action>
+				<action name="User" class="action.main.UserAction">
+					<result name="input">/nesma/user/login.jsp</result>
+					<result name="success">/nesma/user/index.jsp</result>
+					<result name="list">/nesma/user/UserList.jsp</result>
+					<result name="edit">/nesma/user/editUser.jsp</result>
+					<result name="reset">/nesma/user/resetPasswd.jsp</result>
+     			</action>
+     			<action name="Organization" class="action.main.OrganizationAction">
+     				<result name="input">/nesma/user/OrganizationList.jsp</result>
+     				<result name="success">/nesma/user/editOrganization.jsp</result>
+     			</action>		
+     			<action name="AdjustFactor" class="action.main.AdjustFactorAction">
+     				<result name="input">/nesma/adjustFactors/setIndustryFactor.jsp</result>
+     			</action>		
+     			<action name="AdjustParam" class="action.main.AdjustParamAction">
+     				<result name="input">/nesma/adjustFactors/setIndustryParam.jsp</result>
+     			</action>			
+     			<action name="SetAdjust" class="action.main.SetAdjustAction">
+     				<result name="input">/nesma/adjustFactors/setAdjustFactors.jsp</result>
+     			</action>				
+     </package>
+
+</struts>

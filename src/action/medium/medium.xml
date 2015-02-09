@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <package name="medium" extends="struts-default">
+
+				
+				<action name="DataFunctionM" class="action.medium.DataFunctionMAction">
+					<result name="input">/nesma/medium/DataFunctionList.jsp</result>
+					<result name="success">/nesma/medium/editDataFunction.jsp</result>
+					<result name="select">/nesma/medium/selectForDf.jsp</result>
+     			</action>
+				<action name="TransFunctionM" class="action.medium.TransFunctionMAction">
+					<result name="input">/nesma/medium/TransFunctionList.jsp</result>
+					<result name="success">/nesma/medium/editTransFunction.jsp</result>
+					<result name="select">/nesma/medium/selectForTf.jsp</result>
+     			</action>
+				<action name="FpcM" class="action.medium.FpcMAction">
+					<result name="input">/nesma/medium/viewSizeEstimateResult.jsp</result>
+					<result name="inputFit">/nesma/medium/viewCostEstimateResult.jsp</result>
+     			</action>
+     </package>
+
+</struts>
